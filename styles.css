@@ -29,6 +29,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .logo img {
@@ -83,7 +84,7 @@ main {
 }
 
 main.max-h-main-content{
-    max-height: calc(100vh - calc(var(--final-banner-outer-height) + var(--footer-height)));
+    min-height: calc(100vh - calc(var(--final-banner-outer-height) + var(--footer-height)));
 }
 
 main .main-content{
@@ -162,9 +163,6 @@ footer {
     color: black;
     text-align: center;
     padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .logos {
