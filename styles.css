@@ -7,7 +7,7 @@
     --banner-mt: 72px;
     --banner-mb: calc(var(--avatar-height) / 2);
     --final-banner-outer-height: calc(var(--banner-mt) + var(--banner-height));
-    --avatar-height: 100px;
+    --avatar-height: 150px;
     --footer-height: 168px;
 }
 
