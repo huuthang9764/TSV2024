@@ -55,9 +55,10 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a.active{
+nav a:active{
     border-bottom: 1px solid var(--primary-color);
 }
+
 
 #dark-mode-toggle {
     background: none;
@@ -73,6 +74,11 @@ nav a.active{
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.title{
+  margin-top: calc(var(--header-height) + 100px);
+  text-align: center;
+  /* height: var(--banner-height); */
 }
 
 main {
@@ -182,4 +188,98 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+.post-info .avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+.post-info .author-info {
+  display: flex;
+  flex-direction: column;
+}
+.post-info .author-info .name {
+  font-weight: bold;
+  color: #333;
+}
+.post-info .author-info .date {
+  font-size: 12px;
+  color: #888;
+}
+.post-info .fas {
+  margin-left: 5px;
+}
+
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.info-section h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.info-section p {
+  text-align: start;
+  color: #666;
+}
+
+.event-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.organization-logos img {
+  transition: transform 0.3s ease;
+}
+
+.organization-logos img:hover {
+  transform: scale(1.1);
+}
+
+.organization-name h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .organization-name h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-section h2 {
+    font-size: 0.8rem !important;
+  }
+  
+  .info-section p {
+    font-size: 0.8rem;
+  }
+}
+
+.facebook-post-style {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  margin-bottom: 16px;
 }
